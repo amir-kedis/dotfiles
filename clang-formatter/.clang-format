@@ -1,0 +1,10 @@
+---
+UseTab: Always
+TabWidth: 2
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterControlStatement: Always
+  AfterFunction: true
+  BeforeElse: true
+  BeforeWhile: true
+  AfterStruct: true
