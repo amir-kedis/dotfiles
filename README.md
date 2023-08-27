@@ -15,6 +15,9 @@ Features:
 * added compton for tansparency and transitions
 * added keybindings for volume and media controls
 * made startup apps and defulat workspaces for most used apps
+
+![I3 showcase](./i3/ss.png) 
+
 ### Shell (Bash + Zsh + Nu Shell)
 will be added in the future.
 
