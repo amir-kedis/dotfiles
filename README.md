@@ -15,8 +15,13 @@ Features:
 * added compton for tansparency and transitions
 * added keybindings for volume and media controls
 * made startup apps and defulat workspaces for most used apps
+* switch to rofi for app launcher
 
 ![I3 showcase](./i3/ss.png) 
+
+### rofi (app launcher)
+* app launcher
+* emoji picker
 
 ### Shell (Bash + Zsh + Nu Shell)
 will be added in the future.
