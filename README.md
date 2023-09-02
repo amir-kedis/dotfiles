@@ -23,6 +23,9 @@ Features:
 * app launcher
 * emoji picker
 
+![Rofi Launcher](./rofi/rofi-app-launcher.png) 
+![emoji Launcher](./rofi/emoji-launcher.png) 
+
 ### Shell (Bash + Zsh + Nu Shell)
 will be added in the future.
 
@@ -33,7 +36,15 @@ will be added in the future.
 will be added in the future.
 
 ### Terminals 
-will be added in the future.
+## kitty
+Kitty is a terminal emulator that is very customizable and has a lot of features. I use it as my main terminal emulator in ubuntu. It is very fast and has a lot of features.
+Configured with tokyo night theme.
+
+### Fonts (Nerd Fonts)
+
+__Nerd Fonts__ are fonts that have a lot of extra glyphs added to them. These extra glyphs are used to display icons in the terminal. This allows for more customizations without the need for any external programs.__
+
+I use the nerd font JetBrains Nerd Font Mono
 
 ### Window Manger (bugn)
 will be added in the future.
