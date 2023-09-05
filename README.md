@@ -30,7 +30,15 @@ Features:
 will be added in the future.
 
 ### Editor (NeoVim)
-will be added in the future.
+NeoVim is a fork of Vim that is focused on extensibility and usability. It is a modal editor that is very customizable and has a lot of features. I use it as my main editor for coding.
+
+Neovim is configured with lazyvim plugin manager and tokyo night theme.
+Installed after lazyvim is copilot.
+
+Neovim with lazyvim in action:
+![NEOVIM](./screenshots/neovim.png)
+Lazygit integration inside neovim:
+![LAZYGIT](./screenshots/lazygit.png) 
 
 ### Version Control (Git)
 will be added in the future.
