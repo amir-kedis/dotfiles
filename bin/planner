@@ -1,0 +1,42 @@
+#!/bin/bash
+
+cd /home/amir/dev/planner || exit
+
+today=$(date +"%d-%m-%Y")
+file_name="$today.md"
+
+get_quote() {
+	quote=$(curl -sX GET https://stoic.tekloon.net/stoic-quote | jq -r .quote)
+	echo "$quote"
+}
+
+write_flie() {
+	touch "$file_name"
+	echo "# 🚀 Daily Planner - $today" >"$file_name"
+	echo "" >>"$file_name"
+	echo "## 🎯 Daily Highlight" >>"$file_name"
+	echo "- [ ] Highlight" >>"$file_name"
+	echo "" >>"$file_name"
+	echo "## 🔨 Might Do's" >>"$file_name"
+	echo "- [ ] Task 1" >>"$file_name"
+	echo "- [ ] Task 2" >>"$file_name"
+	echo "" >>"$file_name"
+	echo "## 🤔 Quote of the Day" >>"$file_name"
+	quote=$(get_quote)
+	echo "> $quote" >>"$file_name"
+	echo "" >>"$file_name"
+}
+
+main() {
+	if [ -f "$file_name" ]; then
+		echo "File already exists"
+	else
+		write_flie
+		echo "- [$today](./$file_name)" >>README.md
+		git add .
+		git commit -m "Create daily planner for $today"
+		git push
+	fi
+}
+
+main
