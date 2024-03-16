@@ -102,7 +102,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+space focus mode_toggle 
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -170,8 +170,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+mod2+KP_8 exec  --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym $mod+mod2+KP_2 exec  --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym $mod+mod2+KP_5 exec  --no-startup-id playerctl play-pause
-bindsym $mod+mod2+KP_4 exec  --no-startup-id playerctl next
-bindsym $mod+mod2+KP_6 exec  --no-startup-id playerctl previous
+bindsym $mod+mod2+KP_6 exec  --no-startup-id playerctl next
+bindsym $mod+mod2+KP_4 exec  --no-startup-id playerctl previous
 
 # app shortcuts
 # spotify
@@ -241,5 +241,16 @@ exec spotify
 exec ticktick
 
 # set wallpaper
-exec_always feh --bg-scale /home/amir/Pictures/dark-bg.jpg
+exec_always feh --bg-scale /home/amir/Pictures/cur.png
 exec_always compton
+
+# change keyboard layout
+exec_always --no-startup-id  "setxkbmap -layout us,ar"
+exec_always --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
+exec_always --no-startup-id "setxkbmap -option 'caps:swapescape'"
+
+exec --no-startup-id lxpolkit
+exec_always --no-startup-id "~/dev/.dotfiles/bin/planner"
+
+
+
