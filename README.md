@@ -15,3 +15,8 @@
 - Nerd Font
 - Music Control
 - Various Control Setting
+
+## picom
+- Transpaerncy
+- Fading
+- smooth transition
