@@ -26,3 +26,9 @@
 - workspace
 - info and time 
 - network name
+
+## backgrounds
+- handled with feh
+
+## rofi
+- combined system for running apps and switching windows
