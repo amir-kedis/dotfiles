@@ -26,6 +26,9 @@ exec --no-startup-id dex --autostart --environment i3
 # start picom
 exec_always --no-startup-id picom --config ~/.config/picom.conf
 
+# start polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -152,7 +155,6 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 assign [class="Gnome-terminal"] $ws2
 assign [class="alacritty"] $ws2
 assign [class="Spotify"] $ws10
-assign [class="ticktick"] $ws3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -164,9 +166,9 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # Media volume controls
 bindsym $mod+mod2+KP_8 exec  --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym $mod+mod2+KP_2 exec  --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
-bindsym $mod+mod2+KP_5 exec  --no-startup-id playerctl play-pause
-bindsym $mod+mod2+KP_6 exec  --no-startup-id playerctl next
-bindsym $mod+mod2+KP_4 exec  --no-startup-id playerctl previous
+bindsym $mod+mod2+KP_5 exec  --no-startup-id playerctl play-pause -p spotify
+bindsym $mod+mod2+KP_6 exec  --no-startup-id playerctl next -p spotify
+bindsym $mod+mod2+KP_4 exec  --no-startup-id playerctl previous -p spotify
 
 
 
@@ -207,23 +209,6 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar 
-{
-  status_command i3blocks -c ~/.i3/i3blocks.conf
-	colors 
-	{
-    background #282A36
-    statusline #F8F8F2
-    separator  #44475A
-
-    focused_workspace  #44475A #44475A #F8F8F2
-    active_workspace   #282A36 #44475A #F8F8F2
-    inactive_workspace #282A36 #282A36 #BFBFBF
-    urgent_workspace   #FF5555 #FF5555 #F8F8F2
-    binding_mode       #FF5555 #FF5555 #F8F8F2
-  }
-}
-
 
 # change keyboard layout
 exec_always --no-startup-id  "setxkbmap -layout us,ar"

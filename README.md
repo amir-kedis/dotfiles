@@ -20,3 +20,9 @@
 - Transpaerncy
 - Fading
 - smooth transition
+
+## polybar
+- spotify script
+- workspace
+- info and time 
+- network name
