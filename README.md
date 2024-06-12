@@ -6,4 +6,8 @@
 - Autocomplete
 - fancy ls
 
+# Alacrity 
 
+- Catppuchin
+- Nerd Font
+- ZSH Default
