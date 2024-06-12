@@ -32,7 +32,11 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # set background
 exec_always feh --bg-scale ~/.config/background/001.png
 
+# remove annoying borders
 for_window [class="^.*"] border pixel 1
+
+# start auth manager
+exec_always --no-startup-id /usr/bin/lxsession
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
