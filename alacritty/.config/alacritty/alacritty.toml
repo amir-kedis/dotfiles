@@ -26,3 +26,6 @@ style = "Italic"
 [font.normal]
 family = "MesloLGS Nerd Font Mono"
 style = "Regular"
+
+[window]
+opacity = 0.8
