@@ -6,8 +6,12 @@
 - Autocomplete
 - fancy ls
 
-# Alacrity 
-
+## Alacrity 
 - Catppuchin
 - Nerd Font
 - ZSH Default
+
+## I3 
+- Nerd Font
+- Music Control
+- Various Control Setting
