@@ -1,5 +1,12 @@
 # dotfiles for arch
 
+
+https://github.com/amir-kedis/dotfiles/assets/88613195/7340dc00-fae0-4149-8a2d-01bbb3b3772f
+
+> [!important]
+> Every config is stwed together with stow.
+> just run `stow foldername` to make the simlink
+
 ## ZSH
 
 - Syntax Hilighting
