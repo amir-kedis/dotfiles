@@ -119,6 +119,8 @@ bindsym $mod+a focus parent
 # suspend and shutdown
 bindsym $mod+Control+s exec --no-startup-id systemctl suspend
 
+## scripts
+bindsym $mod+Shift+p exec --no-startup-id $HOME/.config/scripts/changeHeadphone.sh
 
 # focus the child container
 #bindsym $mod+d focus child
