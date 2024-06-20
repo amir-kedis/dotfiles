@@ -16,6 +16,7 @@ return { -- Highlight, edit, and navigate code
 			"cuda",
 			"typescript",
 			"javascript",
+			"tsx",
 			"json",
 			"yaml",
 			"css",
