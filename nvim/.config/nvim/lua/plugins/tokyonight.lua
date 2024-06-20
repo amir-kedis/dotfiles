@@ -9,7 +9,7 @@ return { -- You can easily change to a different colorscheme.
 		transparent = true,
 		styles = {
 			sidebars = "transparent",
-			floats = "transparent",
+			-- floats = "transparent",
 		},
 	},
 	init = function()

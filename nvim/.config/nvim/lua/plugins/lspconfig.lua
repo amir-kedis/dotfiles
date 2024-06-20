@@ -172,6 +172,39 @@ return { -- LSP Configuration & Plugins
 			-- tsserver = {},
 			--
 
+			tsserver = {
+				settings = {
+					typescript = {
+						inlayHints = {
+							includeInlayParameterNameHints = "literal",
+							includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+							includeInlayFunctionParameterTypeHints = true,
+							includeInlayVariableTypeHints = false,
+							includeInlayPropertyDeclarationTypeHints = true,
+							includeInlayFunctionLikeReturnTypeHints = true,
+							includeInlayEnumMemberValueHints = true,
+						},
+					},
+					javascript = {
+						inlayHints = {
+							includeInlayParameterNameHints = "all",
+							includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+							includeInlayFunctionParameterTypeHints = true,
+							includeInlayVariableTypeHints = true,
+							includeInlayPropertyDeclarationTypeHints = true,
+							includeInlayFunctionLikeReturnTypeHints = true,
+							includeInlayEnumMemberValueHints = true,
+						},
+					},
+				},
+			},
+			cssls = {},
+			tailwindcss = {},
+			html = {},
+			jsonls = {},
+			eslint = {},
+			prettier = {},
+
 			lua_ls = {
 				-- cmd = {...},
 				-- filetypes = { ...},
