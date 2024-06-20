@@ -34,4 +34,10 @@ vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right win
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
+-- saving and quitting
+vim.keymap.set("n", "<leader>w", "<cmd>write<CR>", { desc = "Save the current file" })
+vim.keymap.set("n", "<leader>W", "<cmd>writeall<CR>", { desc = "Save all files" })
+vim.keymap.set("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quit the current window" })
+vim.keymap.set("n", "<leader>Q", "<cmd>quitall<CR>", { desc = "Quit all windows" })
+
 -- vim: ts=2 sts=2 sw=2 et
