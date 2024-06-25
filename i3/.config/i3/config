@@ -173,6 +173,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+# lock shortcust
+bindsym $mod+Ctrl+l exec $HOME/.config/i3/i3scripts/lock.sh
+
 # Media volume controls
 bindsym $mod+mod2+KP_8 exec  --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 bindsym $mod+mod2+KP_2 exec  --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
