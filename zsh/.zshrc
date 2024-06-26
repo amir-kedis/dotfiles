@@ -121,7 +121,6 @@ export LD_LIBRARY_PATH="$HOME/llvm-project/build/lib:$LD_LIBRARY_PATH"
 alias zshconfig="nvim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cl="clear"
-alias bat="batcat"
 alias ls="exa --icons"
 alias t="tmux"
 
