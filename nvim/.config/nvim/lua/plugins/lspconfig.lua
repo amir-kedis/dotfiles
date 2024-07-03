@@ -204,6 +204,7 @@ return { -- LSP Configuration & Plugins
 			jsonls = {},
 			eslint = {},
 			prettier = {},
+			dockerls = {},
 
 			lua_ls = {
 				-- cmd = {...},
