@@ -40,4 +40,7 @@ vim.keymap.set("n", "<leader>W", "<cmd>writeall<CR>", { desc = "Save all files" 
 vim.keymap.set("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quit the current window" })
 vim.keymap.set("n", "<leader>Q", "<cmd>quitall<CR>", { desc = "Quit all windows" })
 
+-- yanking the whole buffer
+vim.keymap.set("n", "<leader>yf", "<cmd>%y+<CR>", { desc = "Yank the whole buffer to the clipboard" })
+
 -- vim: ts=2 sts=2 sw=2 et
