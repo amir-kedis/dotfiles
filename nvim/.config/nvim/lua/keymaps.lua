@@ -36,7 +36,6 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 
 -- saving and quitting
 vim.keymap.set("n", "<leader>w", "<cmd>write<CR>", { desc = "Save the current file" })
-vim.keymap.set("n", "<leader>W", "<cmd>writeall<CR>", { desc = "Save all files" })
 vim.keymap.set("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quit the current window" })
 vim.keymap.set("n", "<leader>Q", "<cmd>quitall<CR>", { desc = "Quit all windows" })
 
