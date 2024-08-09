@@ -14,5 +14,5 @@ return {
 		vim.keymap.set("i", "<C-Space>", "<Plug>(copilot-suggest)", { noremap = false })
 	end,
 	-- disable the plugin by default
-	enabled = false,
+	enabled = true,
 }
