@@ -29,35 +29,35 @@ return {
 			function()
 				require("harpoon"):list():select(1)
 			end,
-			desc = "harpoon to file 1",
+			desc = "which_key_ignore",
 		},
 		{
 			"<leader>2",
 			function()
 				require("harpoon"):list():select(2)
 			end,
-			desc = "harpoon to file 2",
+			desc = "which_key_ignore",
 		},
 		{
 			"<leader>3",
 			function()
 				require("harpoon"):list():select(3)
 			end,
-			desc = "harpoon to file 3",
+			desc = "which_key_ignore",
 		},
 		{
 			"<leader>4",
 			function()
 				require("harpoon"):list():select(4)
 			end,
-			desc = "harpoon to file 4",
+			desc = "which_key_ignore",
 		},
 		{
 			"<leader>5",
 			function()
 				require("harpoon"):list():select(5)
 			end,
-			desc = "harpoon to file 5",
+			desc = "which_key_ignore",
 		},
 		{
 			"<leader>sm",
