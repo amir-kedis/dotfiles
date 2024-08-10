@@ -27,7 +27,7 @@ return { -- Autoformat
 			lua = { "stylua" },
 			c = { "clang-format" },
 			-- Conform can also run multiple formatters sequentially
-			-- python = { "autoflake", "autopep8", "isort" },
+			python = { "black", "isort" },
 			--
 			-- You can use a sub-list to tell conform to run *until* a formatter
 			-- is found.
