@@ -21,6 +21,7 @@ return { -- Highlight, edit, and navigate code
 			"yaml",
 			"css",
 			"scss",
+			"styled",
 			"python",
 			"gitignore",
 		},
